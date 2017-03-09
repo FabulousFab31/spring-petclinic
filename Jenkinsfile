@@ -1,4 +1,4 @@
-//pipeline
+//pipeline{
 stage('build & unit tests') {
     node('build') {
         echo "Build !"
@@ -33,3 +33,4 @@ stage('acceptance-tests') {
 stage('manual-input') {
     input "T'es sûr tu veux déployer?"
 }
+
